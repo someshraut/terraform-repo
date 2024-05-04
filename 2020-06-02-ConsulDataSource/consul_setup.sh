@@ -1,6 +1,9 @@
 ## Set the version of Consul
 CONSUL_VERSION=1.7.3
 
+
+
+
 ## Download consul and start the service
 wget -O consul.zip https://releases.hashicorp.com/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_linux_amd64.zip
 unzip consul.zip
