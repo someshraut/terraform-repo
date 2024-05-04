@@ -2,6 +2,7 @@
 # VARIABLES
 #######################################################################################
 
+
 variable "consul_address" {
   type = string
   description = "Address of Consul server"
@@ -39,7 +40,7 @@ data "consul_keys" "networking" {
   key {
     name    = "vpc_cidr"
     path    = "terraform/vpc/${terraform.workspace}/cidr_range"
-    default = "10.3.0.0/16"
+    default = "10.3.0.0/16"   
   }
 }
 
